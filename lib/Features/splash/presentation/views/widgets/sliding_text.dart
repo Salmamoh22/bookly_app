@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SlidingText extends StatelessWidget {
-  const SlidingText({
-    super.key,
-    required this.slidingAnimation,
-  });
+  const SlidingText({super.key, required this.slidingAnimation});
 
   final Animation<Offset> slidingAnimation;
 
@@ -17,7 +14,7 @@ class SlidingText extends StatelessWidget {
           position: slidingAnimation,
           child: const Text("Read Free Books", textAlign: TextAlign.center),
         );
-      }
+      },
     );
   }
 }

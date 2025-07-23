@@ -11,6 +11,8 @@ class BookDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+  
+
     var width = MediaQuery.of(context).size.width;
     return CustomScrollView(
       slivers: [
@@ -23,7 +25,10 @@ class BookDetailsViewBody extends StatelessWidget {
                 const CustomBookDetailsAppBar(),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: width * .33),
-                  child: CustomBookImage(),
+                  child: CustomBookImage(
+                    imageUrl:
+                        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Jungle_Book_%25281967_film%2529&psig=AOvVaw1LwxZQIUJsr53b4kOXhCqz&ust=1752760602100000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLivgMjXwY4DFQAAAAAdAAAAABAP",
+                  ),
                 ),
                 const SizedBox(height: 43),
                 Text(
